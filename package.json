@@ -1,7 +1,19 @@
 {
-  "name": "book-plugin",
-  "version": "1.0.0",
+  "name": "gitbook-plugin-myhna",
+  "version": "0.0.1",
   "description": "gitbook plugin",
+  "engines": {
+    "gitbook": ">1.x.x"
+  },
+  "gitbook": {
+    "properties": {
+      "myConfigKey": {
+        "type": "string",
+        "default": "it's the default value",
+        "description": "It defines my awesome config!"
+      }
+    }
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
